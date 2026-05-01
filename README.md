@@ -1,13 +1,25 @@
-This mini-program was developed as a small project for the course NT101 - VNUHCM UIT
 
-It's used to demonstrate the way of using these 2 encryption algorithms: Playfair (classic) and RSA (morden).
 
-It has all the necessary functions for the Playfair (encryption, decryption) and RSA (encryption, decryption, sign a digital signature using built-in sha256 hashing, verify a signature).
+# beSure - Cryptography & Checksum Utility
 
-Other than that, it has a useful feature: Checksum checker
-You can choose a file and calculate its checksums (with the common hashes like md5, sha1, sha256, sha512). You can also compare the expected original checksum and the one that is calculated by the program to know if your file has been modified or not.
+This mini-program was developed as a final project for the **NT101** course at **VNUHCM - UIT**. 
 
-Authors: Pham Duc Long - UI/UX Design & Checksum Feature Implementation.
-         Ngo Nhat Linh: Core Logic for Playfair & RSA Algorithms.
+Its primary purpose is to demonstrate the practical application of two distinct encryption algorithms: **Playfair** (Classical Cryptography) and **RSA** (Modern Cryptography). Other than that, it also has a useful feature: File **Checksum Checker**.
+
+## 🚀 Features
+
+### 1. Encryption Algorithms
+*   **Playfair Cipher:** Full support for Encryption and Decryption.
+*   **RSA Algorithm:** Supports Encryption, Decryption, Digital Signature creation (using built-in SHA256 hashing), and Signature Verification.
+
+### 2. File Checksum Checker
+A highly useful built-in feature to verify file integrity.
+*   **Supported Hashes:** MD5, SHA1, SHA256, and SHA512.
+*   **Verification:** Easily compare an expected checksum with the one calculated by the program to determine if your file has been tampered with or modified.
+
+## 👨‍💻 Authors
+*   **Pham Duc Long:** UI/UX Design & Checksum Feature Implementation.
+*   **Ngo Nhat Linh:** Core Logic for Playfair & RSA Algorithms.
+
          
 ![Checksum](./checksum.png)
