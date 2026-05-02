@@ -23,6 +23,7 @@ set(PROJECT_SOURCES
         RSA.h
         playfair.h
         resources.qrc
+        Checksum.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
