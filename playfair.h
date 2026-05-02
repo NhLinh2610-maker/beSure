@@ -78,18 +78,31 @@ public:
         }
 
         // 2. XỬ LÝ ĐỆM (Chỉ làm khi MÃ HÓA)
+        // 2. XỬ LÝ ĐỆM (Chỉ làm khi MÃ HÓA)
         if (encrypt) {
             string processed = "";
-            for (size_t i = 0; i < input.length(); i++) {
-                processed += input[i];
-                // Nếu 2 chữ cái cạnh nhau giống nhau (ví dụ: LL) -> Chèn ký tự đệm vào giữa
-                if (i + 1 < input.length() && input[i] == input[i + 1]) {
+            size_t i = 0;
+
+            while (i < input.length()) {
+                processed += input[i]; // Lấy chữ cái đầu tiên của cặp
+
+                // Nếu đây là chữ cái cuối cùng bị lẻ loi -> Chèn đệm vào đuôi rồi nghỉ
+                if (i + 1 == input.length()) {
                     processed += (input[i] == firstSep) ? secondSep : firstSep;
+                    break;
+                }
+
+                // Kiểm tra chữ cái thứ 2 của cặp
+                if (input[i] == input[i + 1]) {
+                    // Trùng nhau trong CÙNG 1 CẶP -> Chèn đệm, và chỉ nhảy 1 bước để vòng sau xét lại chữ kia
+                    processed += (input[i] == firstSep) ? secondSep : firstSep;
+                    i += 1;
+                } else {
+                    // Khác nhau -> Ghép thành 1 cặp bình thường, nhảy 2 bước
+                    processed += input[i + 1];
+                    i += 2;
                 }
             }
-            // Nếu độ dài sau khi chèn vẫn lẻ -> Chèn thêm 1 ký tự vào cuối cho đủ cặp
-            if (processed.length() % 2 != 0)
-                processed += (processed.back() == firstSep) ? secondSep : firstSep;
             input = processed;
         }
 
