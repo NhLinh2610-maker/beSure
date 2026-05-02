@@ -17,7 +17,7 @@ A highly useful built-in feature to verify file integrity.
 *   **Supported Hashes:** MD5, SHA1, SHA256, and SHA512.
 *   **Verification:** Easily compare an expected checksum with the one calculated by the program to determine if your file has been tampered with or modified.
 
-### 3. Downloads
+## Downloads
 Download a portable version for Windows by [visiting release page](https://github.com/phaamlong102/beSure/releases).
 
 ## 👨‍💻 Authors
