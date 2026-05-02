@@ -38,19 +38,6 @@ MainWindow::MainWindow(QWidget *parent)
     on_cbbAlgoE_currentIndexChanged(0);
     on_cbbAlgoD_currentIndexChanged(0);
     ui->pbC->setValue(0);
-    ui->btnCpyMD5->setIcon(style()->standardIcon(QStyle::SP_DialogSaveAllButton));
-    ui->btnCpySHA256->setIcon(style()->standardIcon(QStyle::SP_DialogSaveAllButton));
-    ui->btnCpySHA512->setIcon(style()->standardIcon(QStyle::SP_DialogSaveAllButton));
-    ui->btnCpySHA1->setIcon(style()->standardIcon(QStyle::SP_DialogSaveAllButton));
-    ui->btnCpyPVKey->setIcon(style()->standardIcon(QStyle::SP_DialogSaveAllButton));
-    ui->btnCpyPbKey->setIcon(style()->standardIcon(QStyle::SP_DialogSaveAllButton));
-    ui->btnCpyHash->setIcon(style()->standardIcon(QStyle::SP_DialogSaveAllButton));
-
-    ui->btnPstChecksum->setIcon(style()->standardIcon(QStyle::SP_FileIcon));
-    ui->btnPstKeyD->setIcon(style()->standardIcon(QStyle::SP_FileIcon));
-    ui->btnPstKeyRSAD->setIcon(style()->standardIcon(QStyle::SP_FileIcon));
-    ui->btnKeyPstE->setIcon(style()->standardIcon(QStyle::SP_FileIcon));
-    ui->btnPstSignature->setIcon(style()->standardIcon(QStyle::SP_FileIcon));
 
 
     ui->btnBrowse->setIcon(style()->standardIcon(QStyle::SP_DirOpenIcon));
