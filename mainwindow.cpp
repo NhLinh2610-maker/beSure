@@ -47,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->btnHashCal->setIcon(style()->standardIcon(QStyle::SP_MediaPlay));
     this->setWindowIcon(QIcon(":/icons/logo.png"));
     this->setAcceptDrops(true);
-
+    this->resize(400, 200);
     ui->btnHashCal->setEnabled(false);
 }
 
