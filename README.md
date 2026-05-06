@@ -2,7 +2,7 @@
 
 # beSure - Cryptography & Checksum Utility
          
-![Checksum](./beSurelogo.png)
+![Checksum](./icons/beSurelogo.png)
 
 This mini-program was developed as a final project for the **NT101** course at **VNUHCM - UIT**. 
 
